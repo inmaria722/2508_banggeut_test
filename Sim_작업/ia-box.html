@@ -33,7 +33,7 @@
               </div>
           </div>
       </div>
-  </section>
+    </section>
 
     
   <style>
@@ -49,111 +49,113 @@
     }
     /* ----------------- font - end ----------------- */
 
-    .con {
-        padding: 200px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 1620px;
-        margin: 0 auto;
-        position: relative;
-    
-        .title-box {
-            margin-bottom: 100px;
+    .ia-box {
+        .con {
+            padding: 200px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            
-            .category {
+            width: 100%;
+            max-width: 1620px;
+            margin: 0 auto;
+            position: relative;
+        
+            .title-box {
+                margin-bottom: 100px;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 
-                span {
-                    color: #ff873d;
-                    font-size: 16px;
-                    font-weight: 700;
+                .category {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    span {
+                        color: #ff873d;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+            
+                .title {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    h1 {
+                        color: #333333;
+                        font-size: 44px;
+                        line-height: 58px;
+                        font-weight: 700;
+                    }
                 }
             }
         
-            .title {
-                margin-top: 20px;
+            .main-box {
+                background-color: #fafafa;
+                border-radius: 20px;
+            /*     padding: 50px 20px 80px 20px; */
                 display: flex;
+            /*     align-items: center; */
                 justify-content: center;
                 width: 100%;
-                
-                h1 {
-                    color: #333333;
-                    font-size: 44px;
-                    line-height: 58px;
-                    font-weight: 700;
-                }
-            }
-        }
-    
-        .main-box {
-            background-color: #fafafa;
-            border-radius: 20px;
-        /*     padding: 50px 20px 80px 20px; */
-            display: flex;
-        /*     align-items: center; */
-            justify-content: center;
-            width: 100%;
-            height: 934px;
-            position: relative;
-            overflow: hidden;
-    
-            .main-box-bg-img {
-                width: 100%;
-                height: 100%;
-    
-                .ia-img {
+                height: 934px;
+                position: relative;
+                overflow: hidden;
+        
+                .main-box-bg-img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+        
+                    .ia-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
-            }
-        
-            .blue-rounded {
-                background-color: rgba(60, 152, 255, 0.1);
-                border-radius: 10px;
-                border: 1px dashed rgba(60, 152, 255, 0.5);
-                width: 1533px;
-                height: 54px;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 333.9px;
-            }
-        
-            .semi-circle {
-                background-color: #6ec487;
-                border-radius: 100px;
-                border: 2px solid #6ec487;
-                padding-top: 2.6px;
-                display: flex;
-                justify-content: center;
-                width: 36px;
-                height: 36px;
-                position: absolute;
-                overflow: hidden;
-                
-                img {
+            
+                .blue-rounded {
+                    background-color: rgba(60, 152, 255, 0.1);
+                    border-radius: 10px;
+                    border: 1px dashed rgba(60, 152, 255, 0.5);
+                    width: 1533px;
+                    height: 54px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 333.9px;
+                }
+            
+                .semi-circle {
+                    background-color: #6ec487;
+                    border-radius: 100px;
+                    border: 2px solid #6ec487;
+                    padding-top: 2.6px;
+                    display: flex;
+                    justify-content: center;
+                    width: 36px;
                     height: 36px;
+                    position: absolute;
+                    overflow: hidden;
+                    
+                    img {
+                        height: 36px;
+                    }
                 }
-            }
-        
-            .semi-circle-o {
-                border-color: #ff873d;
-                left: 234px;
-                top: 393.91px;
-            }
-        
-            .semi-circle-b {
-                border-color: #3c98ff;
-                left: 1052px;
-                top: 326.91px;
+            
+                .semi-circle-o {
+                    border-color: #ff873d;
+                    left: 234px;
+                    top: 393.91px;
+                }
+            
+                .semi-circle-b {
+                    border-color: #3c98ff;
+                    left: 1052px;
+                    top: 326.91px;
+                }
             }
         }
     }
