@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="sec-guide-box">
+  <div class="con">
+    <div class="bg-gradient-circle"></div>
+    <div class="title-box">
+      <div class="category">
+        <div class="clover">
+          <div class="1">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.70215 0.78125C11.7969 0.781252 13.4951 2.47942 13.4951 4.57422C13.4951 5.59602 13.0897 6.52209 12.4326 7.2041C13.0933 7.90226 13.4999 8.84378 13.5 9.88086C13.5 12.033 11.7547 13.7783 9.60254 13.7783C8.56992 13.7782 7.63182 13.3754 6.93457 12.7197C6.25092 13.3784 5.32214 13.7841 4.29785 13.7842C2.19795 13.7842 0.495289 12.0823 0.495117 9.98242C0.495117 8.92347 0.927521 7.96483 1.62598 7.27539C0.928075 6.58752 0.495117 5.63155 0.495117 4.57422C0.49512 2.47942 2.19329 0.78125 4.28809 0.78125C5.34865 0.781251 6.30679 1.21728 6.99512 1.91895C7.68345 1.21728 8.64158 0.78125 9.70215 0.78125Z" fill="#FF873D"/>
+            </svg>
+          </div>
+        </div>
+        <div class="span">
+          <div class="guide-layout">Guide Layout</div>
+        </div>
+        <div class="clover2">
+          <div class="2">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.70703 0.78125C11.8018 0.781252 13.5 2.47942 13.5 4.57422C13.5 5.59602 13.0945 6.52209 12.4375 7.2041C13.0982 7.90226 13.5048 8.84378 13.5049 9.88086C13.5049 12.033 11.7595 13.7783 9.60742 13.7783C8.57481 13.7782 7.6367 13.3754 6.93945 12.7197C6.25581 13.3784 5.32702 13.7841 4.30273 13.7842C2.20283 13.7842 0.500172 12.0823 0.5 9.98242C0.5 8.92347 0.932404 7.96483 1.63086 7.27539C0.932958 6.58752 0.5 5.63155 0.5 4.57422C0.500002 2.47942 2.19817 0.78125 4.29297 0.78125C5.35353 0.781251 6.31167 1.21728 7 1.91895C7.68833 1.21728 8.64647 0.78125 9.70703 0.78125Z" fill="#FF873D"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <div class="span">
+          <div class="div">
+            어렵게 느껴졌던 자취,
+            <br />
+            가이드를 통해 쉬워질 수 있어요
+          </div>
+        </div>
+      </div>
+      <div class="desc">
+        <div class="span">
+          <div class="div2">
+            실수 없이 자취를 시작할 수 있도록 단계별로 안내해드려요
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-box">
+      <div class="phone-box-phone-box-1">
+        <img class="phone-mockup" src="./guide-section.images/phone-mockup.png">
+        <div class="desc2">
+          <div class="span">
+            <div class="div3">집안일 가이드</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-box-phone-box-2">
+        <div class="btn-box">
+          <div class="btn">
+            <div class="clover-circle">
+              <div class="clover3">
+                <div class="ellipse-92"></div>
+                <div class="ellipse-94"></div>
+                <div class="ellipse-93"></div>
+                <div class="ellipse-95"></div>
+              </div>
+            </div>
+            <div class="span">
+              <div class="div4">가이드 유형</div>
+            </div>
+          </div>
+        </div>
+        <img class="phone-mockup" src="./guide-section.images/phone-mockup-1.png" />
+        <div class="desc3">
+          <div class="span">
+            <div class="div3">상황별 가이드</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-box-phone-box-3">
+        <img class="phone-mockup" src="./guide-section.images/phone-mockup-2.png" />
+        <div class="desc2">
+          <div class="span">
+            <div class="div3">생활팁 가이드</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style>
+  .sec-guide-box,
+.sec-guide-box * {
+  box-sizing: border-box;
+}
+.sec-guide-box {
+  background: var(--base-bcw, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.con {
+  padding: 200px 0px 200px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  max-width: 1620px;
+  position: relative;
+  overflow: hidden;
+}
+.bg-gradient-circle {
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 190, 144, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 5000px;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1373px;
+  height: 1373px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: hidden;
+}
+.title-box {
+  padding: 0px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.clover {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.span {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-layout {
+  color: var(--main-mco, #ff873d);
+  text-align: left;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 16px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.clover2 {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.title {
+  padding: 20px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 44px);
+  line-height: var(---line-height, 58px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.desc {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div2 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Regular", sans-serif);
+  font-size: var(---font-size, 20px);
+  line-height: var(---line-height, 32px);
+  font-weight: var(---font-weight, 400);
+  position: relative;
+}
+.main-box {
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1360px;
+  position: relative;
+}
+.phone-box-phone-box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.phone-mockup {
+  flex-shrink: 0;
+  width: 362px;
+  height: 750px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 362/750;
+}
+.desc2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 320px;
+  position: relative;
+}
+.div3 {
+  color: var(--gray-gc10, #1a1a1a);
+  text-align: left;
+  font-family: var(---font-family, "Pretendard-SemiBold", sans-serif);
+  font-size: var(---font-size, 20px);
+  font-weight: var(---font-weight, 600);
+  position: relative;
+}
+.phone-box-phone-box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.btn-box {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.btn {
+  background: #ffffff;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--gray-gc2, #e6e6e6);
+  border-width: 1px;
+  padding: 14px 20px 14px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.clover-circle {
+  background: var(--gray-gc1, #f2f2f2);
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--gray-gc2, #e6e6e6);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.clover3 {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: static;
+  aspect-ratio: 1;
+}
+.ellipse-92 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.ellipse-94 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 10px;
+  top: 21.25px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.ellipse-93 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 21.25px;
+  top: 10px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.ellipse-95 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 21.25px;
+  top: 21.25px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.div4 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: var(--t-26, 26px);
+  font-weight: var(--w-7, 700);
+  position: relative;
+}
+.desc3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 320px;
+  position: relative;
+}
+.phone-box-phone-box-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+</style>
+
+
+
+
+
+</body>
+</html>
