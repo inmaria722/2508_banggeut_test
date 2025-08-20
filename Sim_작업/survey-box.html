@@ -168,7 +168,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -209,7 +208,7 @@
                             <div class="right-box">
                                 <div class="right-box-con">
                                     <div class="answer-box-wrap">
-                                        <span>
+                                        <span class="question-box">
                                                 Q. 사용하는 앱의 불편한 점이 있다면 무엇인가요?
                                         </span>
                                         <div class="answer-box">
@@ -439,7 +438,7 @@
                                         padding: 2px 6px;
                                         color: #ff873d;
                                         font-size: 16px;
-                                        line-height: 19px;
+                                        line-height: 20px;
                                         font-weight: 700;
                                     }
                                 }
@@ -470,20 +469,6 @@
                                 align-items: center;
                                 position: relative;
                                 overflow: hidden;
-                                
-                                .circle-graph {
-                                    position: absolute;
-                                    width: 545px;
-                                    height: 563px;
-                                    bottom: -240px;
-                                    left: -24px;
-                                }
-                        
-                                .graph-line {
-                                    position: absolute;
-                                    bottom: 150px;
-                                    left: 390px;
-                                }
                         
                                 .left-box {
                                     height: 100%;
@@ -508,109 +493,6 @@
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    
-                                    .bar-graph-box {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: flex-end;
-                                        position: relative;
-                                        
-                                        .bars {
-                                            display: flex;
-                                            flex-direction: column;
-                                            gap: 16px;
-                                            align-items: flex-start;
-                                            justify-content: center;
-                                            width: 553px;
-                                            position: relative;
-                                            overflow: hidden;
-                                
-                                            .bar-bar-wrap {
-                                                display: flex;
-                                                align-items: center;
-                                                gap: 20px;
-                                                width: 100%;
-                                                
-                                                .bar-bar-sub {
-                                                    background-color: #fffaf6;
-                                                    height: 50px;
-                                                    
-                                                    span {
-                                                        color: #ff873d;
-                                                        font-size: 20px;
-                                                        line-height: 32px;
-                                                        font-weight: 400;
-                                                    }
-                                                }
-                                    
-                                                .bar-line {
-                                                    display: flex;
-                                                    align-items: center;
-                                                    justify-content: flex-end;
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                
-                                            .bar-bar {
-                                                border-radius: 4px 10px 10px 4px;
-                                                padding: 0px 20px;
-                                                display: flex;
-                                                gap: 10px;
-                                                align-items: center;
-                                                overflow: hidden;
-                                            }
-                                    
-                                            .bar-bar-1 {
-                                                background-color: #ff873d;
-                                                width: 519px;
-                                                height: 70px;
-                                                
-                                                span {
-                                                    color: #ffffff;
-                                                    font-size: 26px;
-                                                    font-weight: 700;
-                                                }
-                                            }
-                                
-                                            .bar-bar-2 {
-                                                width: 150px;
-                                            }
-                                    
-                                            .bar-bar-3 {
-                                                width: 209px;
-                                            }
-                                    
-                                            .bar-bar-4 {
-                                                width: 116px;
-                                            }
-                                        }
-                                
-                                        .nums {
-                                            display: flex;
-                                            flex-direction: column;
-                                            gap: 16px;
-                                            justify-content: center;
-                                            
-                                            span {
-                                                padding: 0px 20px;
-                                                display: flex;
-                                                align-items: center;
-                                                height: 50px;
-                                                color: #ffa264;
-                                                font-size: 20px;
-                                                line-height: 32px;
-                                                font-weight: 400;
-                                            }
-                                    
-                                            span:first-child {
-                                                height: 70px;
-                                                color: #ff873d;
-                                                font-size: 26px;
-                                                font-weight: 700;
-                                            }
-                                        }
-                                    }
                                 }
                             }
                         }
@@ -627,139 +509,256 @@
                             top: 217.78px;
                             transform: translate(-125.81px, 67px);
                         }
+
+                        .circle-graph {
+                            position: absolute;
+                            width: 545px;
+                            height: 563px;
+                            bottom: -240px;
+                            left: -24px;
+                        }
+                
+                        .graph-line {
+                            position: absolute;
+                            bottom: 150px;
+                            left: 390px;
+                        }
+
+                        .bar-graph-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            position: relative;
+                            
+                            .bars {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                align-items: flex-start;
+                                justify-content: center;
+                                width: 553px;
+                                position: relative;
+                                overflow: hidden;
+                    
+                                .bar-bar-wrap {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                    width: 100%;
+                                    
+                                    .bar-bar-sub {
+                                        background-color: #fffaf6;
+                                        height: 50px;
+                                        
+                                        span {
+                                            color: #ff873d;
+                                            font-size: 20px;
+                                            line-height: 32px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                        
+                                    .bar-line {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-end;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                    
+                                .bar-bar {
+                                    border-radius: 4px 10px 10px 4px;
+                                    padding: 0px 20px;
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    overflow: hidden;
+                                }
+                        
+                                .bar-bar-1 {
+                                    background-color: #ff873d;
+                                    width: 519px;
+                                    height: 70px;
+                                    
+                                    span {
+                                        color: #ffffff;
+                                        font-size: 26px;
+                                        font-weight: 700;
+                                    }
+                                }
+                    
+                                .bar-bar-2 {
+                                    width: 150px;
+                                }
+                        
+                                .bar-bar-3 {
+                                    width: 209px;
+                                }
+                        
+                                .bar-bar-4 {
+                                    width: 116px;
+                                }
+                            }
+                    
+                            .nums {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                justify-content: center;
+                                
+                                span {
+                                    padding: 0px 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 50px;
+                                    color: #ffa264;
+                                    font-size: 20px;
+                                    line-height: 32px;
+                                    font-weight: 400;
+                                }
+                        
+                                span:first-child {
+                                    height: 70px;
+                                    color: #ff873d;
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+
+                    .survey-con-box-2 {
+                        .bar-graph-box-col {
+                            display: flex;
+                            align-items: flex-end;
+                            position: relative;
+                            width: 100%;
+                            
+                            .bar-graph {
+                                display: flex;
+                                gap: 22px;
+                                align-items: flex-end;
+                                width: 100%;
+                                position: relative;
+                                
+                                .bar-col {
+                                    border-radius: 20px 20px 4px 4px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    overflow: hidden;
+                                    
+                                    span {
+                                        color: #ffffff;
+                                        font-size: 26px;
+                                        font-weight: 700;
+                                    }
+                                }
+                        
+                                .bar-col-1 {
+                                    background: linear-gradient(
+                                        180deg,
+                                        rgba(255, 135, 61, 1) 40.00000059604645%,
+                                        rgba(255, 190, 144, 1) 100%
+                                    );
+                                    width: 252px;
+                                    height: 265px;
+                                    
+                                    span:last-child {
+                                        font-size: 48px;
+                                        line-height: 63px;
+                                        font-weight: 700;
+                                    }
+                                }
+                        
+                                .bar-col-2 {
+                                    background: linear-gradient(
+                                        180deg,
+                                        rgba(255, 190, 144, 1) 39.99999761581421%,
+                                        rgba(255, 230, 213, 1) 100%
+                                    );
+                                    width: 153px;
+                                    height: 190px;
+                                    
+                                    span:first-child {
+                                        font-size: 22px;
+                                        line-height: 35px;
+                                    }
+                                }
+                            }
+                        }
+                
+                        .right-box-con {
+                            background: #fff4ec;
+                            border-radius: 20px;
+                            border: 1px solid #ffa264;
+                            padding: 40px;
+                            display: flex;
+                            overflow: hidden;
+                            
+                            .answer-box-wrap {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                width: 100%;
+                                
+                                .question-box {
+                                    background-color: #ff873d;
+                                    border-radius: 10px;
+                                    padding: 10px 0px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #ffffff;
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                    font-weight: 600;
+                                }
+                    
+                                .answer-box {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    
+                                    .answer-wrap {
+                                        display: flex;
+                                        gap: 10px;
+                            
+                                        .answer {
+                                            background-color: #ffffff;
+                                            border-radius: 10px;
+                                            padding: 20px 40px 20px 40px;
+                                            
+                                            .answer-txt {
+                                                font-size: 16px;
+                                                line-height: 26px;
+                                                font-weight: 600;
+                                                color: #b3b3b3;
+                                                
+                                                .highlight {
+                                                    color: #ff873d;
+                                                }
+                                            }
+                                        }
+                                
+                                        .answer-fill {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .bar-col-line {
+                            position: absolute;
+                            left: 430px;
+                            top: 100px;
+                        }
                     }
                 }
             }
-        }
-
-
-        .bar-graph-box-col {
-            display: flex;
-            align-items: flex-end;
-            position: relative;
-            width: 100%;
-        }
-
-        .bar-graph {
-            display: flex;
-            gap: 22px;
-            align-items: flex-end;
-            width: 100%;
-            position: relative;
-        }
-
-        .bar-col {
-            border-radius: 20px 20px 4px 4px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .bar-col-1 {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 135, 61, 1) 40.00000059604645%,
-                rgba(255, 190, 144, 1) 100%
-            );
-            width: 252px;
-            height: 265px;
-        }
-
-        .bar-col span {
-            color: #ffffff;
-            font-size: 26px;
-            font-weight: 700;
-        }
-
-        .bar-col-1 span:last-child {
-            font-size: 48px;
-            line-height: 63px;
-            font-weight: 700;
-        }
-
-        .bar-col-2 {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 190, 144, 1) 39.99999761581421%,
-                rgba(255, 230, 213, 1) 100%
-            );
-            width: 153px;
-            height: 190px;
-        }
-
-        .bar-col-2 span:first-child {
-            font-size: 22px;
-            line-height: 35px;
-        }
-
-
-        .right-box-con {
-            background: #fff4ec;
-            border-radius: 20px;
-            border: 1px solid #ffa264;
-            padding: 40px;
-            display: flex;
-            overflow: hidden;
-        }
-
-        .answer-box-wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 100%;
-        }
-
-        .answer-box-wrap > span {
-            background-color: #ff873d;
-            border-radius: 10px;
-            padding: 10px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 600;
-        }
-
-        .answer-box {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .answer-wrap {
-            display: flex;
-            gap: 10px;
-        }
-
-        .answer {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px 40px 20px 40px;
-        }
-
-        .answer-fill {
-            width: 100%;
-        }
-
-        .answer-txt {
-            font-size: 16px;
-            line-height: 26px;
-            font-weight: 600;
-            color: #b3b3b3;
-        }
-
-        .answer-txt .highlight {
-            color: #ff873d;
-        }
-
-        .bar-col-line {
-            position: absolute;
-            left: 430px;
-            top: 100px;
         }
     </style>
   </body>
