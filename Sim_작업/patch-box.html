@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>patch-box</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <section class="patch-box">
+      <div class="bg-star">
+        <svg
+          width="1328"
+          height="526"
+          viewBox="0 0 1328 526"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.15"
+            d="M1320.94 458.813C1329.75 461.992 1329.75 474.446 1320.94 477.625L1140 542.939C1133.1 545.429 1131.14 554.25 1136.33 559.428L1250.52 673.249C1256.84 679.548 1252.37 690.341 1243.45 690.332L1029.29 690.112C1023.06 690.105 1018.34 695.733 1019.44 701.865L1044.84 844.526C1046.19 852.111 1038.82 858.31 1031.58 855.677L834.464 784.009C829.823 782.322 824.644 784.275 822.274 788.609L744.388 931.003C741.183 936.862 733.247 937.994 728.532 933.264L601.647 805.974C598.377 802.694 593.284 802.088 589.336 804.509L421.495 907.454C415.473 911.147 407.624 907.601 406.414 900.641L380.838 753.418C379.894 747.986 374.732 744.342 369.298 745.273L156.641 781.684C148.381 783.098 142.149 774.333 146.199 766.995L218.463 636.057C221.792 630.026 218.168 622.514 211.375 621.365L8.5197 587.074C-0.603569 585.532 -2.9193 573.492 4.98088 568.675L155.746 476.757C162.138 472.86 162.138 463.578 155.746 459.68L4.98091 367.762C-2.91927 362.945 -0.603562 350.906 8.51971 349.364L211.375 315.072C218.168 313.924 221.792 306.412 218.463 300.38L146.199 169.442C142.149 162.104 148.381 153.339 156.641 154.754L369.298 191.165C374.732 192.095 379.894 188.452 380.838 183.02L406.414 35.7967C407.624 28.8363 415.473 25.2903 421.495 28.9839L589.336 131.928C593.284 134.349 598.377 133.744 601.647 130.464L728.532 3.17337C733.247 -1.55608 741.183 -0.424307 744.388 5.43438L822.274 147.829C824.644 152.162 829.823 154.116 834.465 152.428L1031.58 80.7602C1038.82 78.1277 1046.19 84.3269 1044.84 91.9117L1019.44 234.572C1018.34 240.704 1023.06 246.332 1029.29 246.326L1243.45 246.106C1252.37 246.097 1256.84 256.89 1250.52 263.188L1136.33 377.01C1131.14 382.187 1133.1 391.008 1140 393.498L1320.94 458.813Z"
+            fill="url(#paint0_radial_4712_131567)"
+          />
+          <defs>
+            <radialGradient
+              id="paint0_radial_4712_131567"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(724.116 24.7188) rotate(104.031) scale(1221.96 1295.8)"
+            >
+              <stop stop-color="#FFFAF6" />
+              <stop offset="1" stop-color="white" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="con">
+        <div class="title">
+          <p>혼자의 삶을 실질적으로 지원하는 생활 솔루션 방긋이</p>
+          <div>
+            <p>여러분의 일상 속</p>
+            <p>을 함께 채워갈게요</p>
+          </div>
+        </div>
+        <div class="patch">빈틈</div>
+      </div>
+    </section>
+
+    
+    <style>
+      /* ----------------- font - start ----------------- */
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+      html,
+      html > body {
+        font-family: "Pretendard Variable", Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      }
+      /* ----------------- font - end ----------------- */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      span,
+      p {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+      }
+
+      .patch-box {
+        background-color: #ff873d;
+        position: relative;
+        overflow: hidden;
+
+        .bg-star {
+          position: absolute;
+          top: 55px;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: visible;
+        }
+
+        .con {
+          max-width: 1620px;
+          margin: 0 auto;
+          width: 100%;
+          padding: 230px 0px 200px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          overflow: hidden;
+
+          .title {
+            overflow: hidden;
+
+            div {
+              display: flex;
+              justify-content: center;
+              gap: 160px;
+            }
+
+            p {
+              color: #ffffff;
+              text-align: center;
+              font-size: 44px;
+              line-height: 80px;
+              font-weight: 700;
+            }
+          }
+
+          .patch {
+            background-color: #6ec487;
+            border-radius: 1000px;
+            border: 10px solid #f0f9f3;
+            padding: 10px 35px;
+            position: absolute;
+            top: 307px;
+            left: 50%;
+            transform: rotate(-4.266deg) translateX(-63%);
+            color: #ffffff;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+          }
+        }
+      }
+    </style>
+  </body>
+</html>

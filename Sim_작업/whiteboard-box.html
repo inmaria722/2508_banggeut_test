@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whiteboard-box</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <section class="whiteboard-box">
+      <div class="con">
+        <div class="whiteboard">
+          <div class="box box-1">
+            <span>1인을 위한</span>
+            <span class="orange">맞춤형 정보 큐레이션</span>
+            <span>서비스 도입</span>
+          </div>
+          <div class="box box-2">
+            <span>반복되는 루틴 속에서</span>
+            <span class="green">생활 스트레스 줄이도록</span>
+            <span>지원</span>
+          </div>
+          <div class="check-o">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="16.5"
+                fill="#FF873D"
+                stroke="#FF873D"
+              />
+              <path
+                d="M9 16.2308L15.8919 23L24 12"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="check-g">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="16.5"
+                fill="#6EC487"
+                stroke="#6EC487"
+              />
+              <path
+                d="M9 16.2308L15.8919 23L24 12"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="pen-r">
+            <svg
+              width="88"
+              height="9"
+              viewBox="0 0 88 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M68 0H83.5C85.9853 0 88 2.01472 88 4.5V4.5C88 6.98528 85.9853 9 83.5 9H68V0Z"
+                fill="#FF5B5B"
+              />
+              <path
+                d="M0 0H15.5C17.9853 0 20 2.01472 20 4.5V4.5C20 6.98528 17.9853 9 15.5 9H0V0Z"
+                fill="#FF5B5B"
+              />
+              <path d="M3 0H72V9H3V0Z" fill="#E6E6E6" />
+            </svg>
+          </div>
+          <div class="pen-b">
+            <svg
+              width="88"
+              height="9"
+              viewBox="0 0 88 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M68 0H83.5C85.9853 0 88 2.01472 88 4.5V4.5C88 6.98528 85.9853 9 83.5 9H68V0Z"
+                fill="#3C98FF"
+              />
+              <path
+                d="M0 0H15.5C17.9853 0 20 2.01472 20 4.5V4.5C20 6.98528 17.9853 9 15.5 9H0V0Z"
+                fill="#3C98FF"
+              />
+              <path d="M3 0H72V9H3V0Z" fill="#E6E6E6" />
+            </svg>
+          </div>
+          <div class="teacher-semi">
+            <img src="../banggeut/img_yuna/teacher-semi.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ----------------- font - start ----------------- */
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+      html,
+      html > body {
+        font-family: "Pretendard Variable", Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      }
+      /* ----------------- font - end ----------------- */
+
+      .whiteboard-box {
+        background: #ff873d;
+        overflow: hidden;
+
+        .con {
+          max-width: 1620px;
+          margin: 0 auto;
+          width: 100%;
+          padding: 200px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          .whiteboard {
+            background-color: #fffaf6;
+            border-radius: 30px;
+            padding: 150px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1620px;
+            position: relative;
+            overflow: hidden;
+
+            .box {
+              display: flex;
+              gap: 25px;
+              align-items: center;
+              justify-content: center;
+              height: 95px;
+              position: relative;
+
+              span {
+                color: #666666;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 36px;
+              }
+
+              .orange {
+                border-radius: 30px;
+                border: 2px solid #ff873d;
+                padding: 10px 20px;
+                color: #ff873d;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38px;
+              }
+
+              .green {
+                border-radius: 30px;
+                border: 2px solid #6ec487;
+                padding: 10px 20px;
+                color: #6ec487;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38px;
+              }
+            }
+
+            .check-o {
+              width: 34px;
+              height: 34px;
+              position: absolute;
+              left: 639px;
+              top: 156.78px;
+            }
+
+            .check-g {
+              width: 34px;
+              height: 34px;
+              position: absolute;
+              left: 732px;
+              top: 252.78px;
+            }
+
+            .pen-r {
+              position: absolute;
+              bottom: 0;
+              left: 100px;
+            }
+
+            .pen-b {
+              position: absolute;
+              bottom: 0;
+              left: 202px;
+            }
+
+            .teacher-semi {
+              width: 458.61px;
+              height: 448.74px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    </style>
+  </body>
+</html>
