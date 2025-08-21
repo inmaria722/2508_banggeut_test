@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>whiteboard-box</title>
 
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
@@ -13,17 +20,17 @@
     <section class="whiteboard-box">
       <div class="con">
         <div class="whiteboard">
-          <div class="box box-1">
+          <div class="box box-1" fade="up">
             <span>1인을 위한</span>
             <span class="orange">맞춤형 정보 큐레이션</span>
             <span>서비스 도입</span>
           </div>
-          <div class="box box-2">
+          <div class="box box-2" fade="up" data-delay="0.4">
             <span>반복되는 루틴 속에서</span>
             <span class="green">생활 스트레스 줄이도록</span>
             <span>지원</span>
           </div>
-          <div class="check-o">
+          <div class="check-o" fade="up">
             <svg
               width="34"
               height="34"
@@ -46,7 +53,7 @@
               />
             </svg>
           </div>
-          <div class="check-g">
+          <div class="check-g" fade="up" data-delay="0.4">
             <svg
               width="34"
               height="34"
@@ -229,5 +236,28 @@
         }
       }
     </style>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        gsap.registerPlugin(ScrollTrigger);
+
+        //공동 속성
+        $('[fade="up"]').each(function(i,e){
+          const delay = $(e).data('delay') || 0;
+
+            gsap.from(e,{
+                opacity:0,
+                y:60,
+                duration:.8,
+                delay: delay,
+                scrollTrigger:{
+                    trigger:e,
+                    start:'top 90%',
+                    toggleActions:'play none none reverse',
+                }
+            })
+        })
+      });
+    </script>
   </body>
 </html>
