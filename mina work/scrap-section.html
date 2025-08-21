@@ -11,10 +11,10 @@
   <div class="sec-scrap-box">
   <div class="con">
     <div class="bg-clover">
-      <div class="ellipse-92"></div>
-      <div class="ellipse-94"></div>
-      <div class="ellipse-93"></div>
-      <div class="ellipse-95"></div>
+      <div class="bg-clover-1"></div>
+      <div class="bg-clover-2"></div>
+      <div class="bg-clover-3"></div>
+      <div class="bg-clover-4"></div>
     </div>
     <div class="star">
       <div class="star-group">
@@ -127,7 +127,7 @@
             </svg>
           </div>
         </div>
-        <div class="span">
+        <div class="category-text">
           <div class="scrap-layout">scrap Layout</div>
         </div>
         <div class="clover">
@@ -159,14 +159,22 @@
       <div class="phone-box">
         <div class="btn-box">
           <div class="btn">
-            <img class="scrap-circle" src="scrap-circle0.svg" />
+            <div class="scrap-circle">
+              <div class="scrap-circle-group">
+                <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.28125" width="44" height="44" rx="22" fill="#F2F2F2"/>
+                <rect x="0.5" y="1.28125" width="44" height="44" rx="22" stroke="#E6E6E6"/>
+                <path d="M14.4131 11.5312H30.5996C30.9615 11.5313 31.25 11.8272 31.25 12.1689V34.4512L23.2031 29.5889L22.8281 29.3623L22.4463 29.5781L13.7627 34.4873V12.1689C13.7627 11.8272 14.0512 11.5312 14.4131 11.5312Z" fill="#FF873D" stroke="#FF873D" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+            </div>
             <div class="span">
               <div class="div3">스크랩 내역</div>
             </div>
           </div>
         </div>
-        <img class="phone-overflow-img" src="phone-overflow-img0.png" />
-        <img class="phone-mockup" src="phone-mockup0.png" />
+        <img class="phone-overflow-img" src="./scrap-section.images/phone-overflow-img.png" />
+        <img class="phone-mockup" src="./scrap-section.images/phone-mockup.png" />
       </div>
     </div>
   </div>
@@ -189,6 +197,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .con {
   padding: 200px 0px 200px 0px;
   display: flex;
@@ -200,61 +209,69 @@
   height: 2500px;
   max-width: 1620px;
   position: relative;
+
+  .bg-clover {
+    width: 1252px;
+    height: 1252px;
+    position: static;
+    position: relative;
+    z-index: 0;
+
+    .bg-clover-1 {
+      background: #f5f9ff;
+      border-radius: 50%;
+      width: 688.6px;
+      height: 688.6px;
+      position: absolute;
+      left: 184px;
+      top: 500px;
+    }
+    .bg-clover-2 {
+      background: #f5f9ff;
+      border-radius: 50%;
+      width: 688.6px;
+      height: 688.6px;
+      position: absolute;
+      left: 184px;
+      top: 1150px;
+    }
+    .bg-clover-3 {
+      background: #f5f9ff;
+      border-radius: 50%;
+      width: 688.6px;
+      height: 688.6px;
+      position: absolute;
+      left: 747.4px;
+      top: 500px;
+    }
+    .bg-clover-4 {
+      background: #f5f9ff;
+      border-radius: 50%;
+      width: 688.6px;
+      height: 688.6px;
+      position: absolute;
+      left: 747.4px;
+      top: 1150px;
+    }
+  }
+  
+  .star {
+    border-radius: 0px;
+    flex-shrink: 0;
+    width: 220.46px;
+    height: 220.46px;
+    position: absolute;
+    left: 1053.83px;
+    top: 875px;
+    transform: translate(-115.87px, 55.97px);
+    overflow: visible;
+  }
 }
-.bg-clover {
-  flex-shrink: 0;
-  width: 1252px;
-  height: 1252px;
-  position: static;
-}
-.ellipse-92 {
-  background: #f5f9ff;
-  border-radius: 50%;
-  width: 688.6px;
-  height: 688.6px;
-  position: absolute;
-  left: 184px;
-  top: 660px;
-}
-.ellipse-94 {
-  background: #f5f9ff;
-  border-radius: 50%;
-  width: 688.6px;
-  height: 688.6px;
-  position: absolute;
-  left: 184px;
-  top: 1223.4px;
-}
-.ellipse-93 {
-  background: #f5f9ff;
-  border-radius: 50%;
-  width: 688.6px;
-  height: 688.6px;
-  position: absolute;
-  left: 747.4px;
-  top: 660px;
-}
-.ellipse-95 {
-  background: #f5f9ff;
-  border-radius: 50%;
-  width: 688.6px;
-  height: 688.6px;
-  position: absolute;
-  left: 747.4px;
-  top: 1223.4px;
-}
-.star {
-  border-radius: 0px;
-  flex-shrink: 0;
-  width: 220.46px;
-  height: 220.46px;
-  position: absolute;
-  left: 1053.83px;
-  top: 875px;
-  transform: translate(-115.87px, 55.97px);
-  overflow: visible;
-}
-.semi {
+
+
+
+
+.con > .semi {
   flex-shrink: 0;
   width: 354.53px;
   height: 364.33px;
@@ -264,7 +281,8 @@
   transform: translate(-46.62px, 0px);
   overflow: visible;
 }
-.nemi {
+
+.con > .nemi {
   flex-shrink: 0;
   width: 308.84px;
   height: 311.15px;
@@ -275,7 +293,8 @@
   overflow: visible;
   aspect-ratio: 308.84/311.15;
 }
-.title-box {
+
+.con > .title-box {
   padding: 0px 0px 100px 0px;
   display: flex;
   flex-direction: column;
@@ -287,7 +306,8 @@
   position: relative;
   overflow: hidden;
 }
-.category {
+
+.con > .title-box > .category {
   display: flex;
   flex-direction: row;
   gap: 6px;
@@ -297,14 +317,16 @@
   flex-shrink: 0;
   position: relative;
 }
-.clover {
+
+.con > .title-box > .category > .clover {
   flex-shrink: 0;
   width: 13px;
   height: 13px;
   position: relative;
   overflow: visible;
 }
-.span {
+
+.con > .title-box > .category > .category-text {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -313,7 +335,8 @@
   flex-shrink: 0;
   position: relative;
 }
-.scrap-layout {
+
+.con > .title-box > .category > .category-text > .scrap-layout {
   color: var(--main-mcb, #3c98ff);
   text-align: left;
   font-family: var(---font-family, "Pretendard-Bold", sans-serif);
@@ -321,6 +344,7 @@
   font-weight: var(---font-weight, 700);
   position: relative;
 }
+
 .clover2 {
   flex-shrink: 0;
   width: 13px;
@@ -328,6 +352,7 @@
   position: relative;
   overflow: visible;
 }
+
 .title {
   padding: 20px 0px 30px 0px;
   display: flex;
@@ -339,6 +364,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .div {
   color: var(--gray-gc9, #333333);
   text-align: center;
@@ -348,6 +374,7 @@
   font-weight: var(---font-weight, 700);
   position: relative;
 }
+
 .desc {
   display: flex;
   flex-direction: column;
@@ -358,6 +385,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .div2 {
   color: var(--gray-gc9, #333333);
   text-align: center;
@@ -367,6 +395,7 @@
   font-weight: var(---font-weight, 400);
   position: relative;
 }
+
 .main-box {
   display: flex;
   flex-direction: column;
@@ -377,7 +406,9 @@
   flex-shrink: 0;
   height: 1790px;
   position: relative;
+  z-index: 2;
 }
+
 .phone-box {
   display: flex;
   flex-direction: column;
@@ -386,7 +417,9 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  z-index: 3;
 }
+
 .btn-box {
   padding: 0px 0px 30px 0px;
   display: flex;
@@ -397,6 +430,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .btn {
   background: #ffffff;
   border-radius: 50px;
@@ -412,6 +446,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .scrap-circle {
   border-radius: 100px;
   display: flex;
@@ -424,6 +459,7 @@
   position: relative;
   overflow: visible;
 }
+
 .div3 {
   color: var(--gray-gc9, #333333);
   text-align: center;
@@ -432,6 +468,7 @@
   font-weight: var(--w-7, 700);
   position: relative;
 }
+
 .phone-overflow-img {
   border-radius: 0px 0px 40px 40px;
   flex-shrink: 0;
@@ -440,10 +477,10 @@
   position: absolute;
   left: 0px;
   top: 780.78px;
-  box-shadow: 0px 0px 24px 0px rgba(60, 152, 255, 0.19);
   object-fit: cover;
   aspect-ratio: 382/980;
 }
+
 .phone-mockup {
   flex-shrink: 0;
   width: 382px;
@@ -451,6 +488,7 @@
   position: relative;
   object-fit: cover;
 }
+
 </style> 
 </body>
 </html>
