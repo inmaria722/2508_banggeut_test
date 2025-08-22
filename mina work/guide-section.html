@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <!-- tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./guide.js" defer></script>
 </head>
 <body>
   <div class="sec-guide-box">
   <div class="con">
     <div class="bg-gradient-circle"></div>
-    <div class="title-box">
+    <div class="title-box" data-fade="up" data-delay="0.4">
       <div class="category">
         <div class="clover">
           <div class="1">
@@ -49,7 +56,7 @@
       </div>
     </div>
     <div class="main-box">
-      <div class="phone-box-phone-box-1">
+      <div class="phone-box-phone-box-1" data-fade="up" data-delay="1.7">
         <img class="phone-mockup" src="./guide-section.images/phone-mockup.png">
         <div class="desc2">
           <div class="span">
@@ -57,9 +64,9 @@
           </div>
         </div>
       </div>
-      <div class="phone-box-phone-box-2">
-        <div class="btn-box">
-          <div class="btn">
+      <div class="phone-box-phone-box-2" data-fade="up" data-delay="0.8">
+        <div class="btn-box" data-fade="up" data-delay="0.4">
+          <div class="btn" >
             <div class="clover-circle">
               <div class="clover3">
                 <div class="ellipse-92"></div>
@@ -80,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="phone-box-phone-box-3">
+      <div class="phone-box-phone-box-3" data-fade="up" data-delay="1.2">
         <img class="phone-mockup" src="./guide-section.images/phone-mockup-2.png" />
         <div class="desc2">
           <div class="span">
@@ -97,10 +104,6 @@
 
 
 <style>
-  .sec-guide-box,
-.sec-guide-box * {
-  box-sizing: border-box;
-}
 .sec-guide-box {
   background: var(--base-bcw, #ffffff);
   border-style: solid;

@@ -4,27 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <!-- tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./scrap.js" defer></script>
 </head>
 <body>
   <div class="sec-scrap-box">
   <div class="con">
-    <div class="bg-clover">
+    <div class="bg-clover"  data-fade="up">
       <div class="bg-clover-1"></div>
       <div class="bg-clover-2"></div>
       <div class="bg-clover-3"></div>
       <div class="bg-clover-4"></div>
     </div>
     <div class="star">
-      <div class="star-group">
+      <div class="star-group"  data-fade="up" data-delay="0.8">
         <svg width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M170.238 35.0295C176.156 33.3918 181.165 39.6234 178.292 45.0504L161.556 76.6729C159.784 80.0209 160.997 84.1709 164.293 86.038L195.423 103.673C200.766 106.699 199.901 114.647 194.032 116.454L159.837 126.98C156.217 128.094 154.14 131.886 155.15 135.537L164.693 170.019C166.331 175.937 160.099 180.945 154.672 178.073L123.05 161.337C119.702 159.565 115.552 160.778 113.685 164.074L96.0498 195.204C93.0234 200.546 85.0754 199.682 83.269 193.813L72.7429 159.618C71.6284 155.998 67.8364 153.921 64.1856 154.931L29.7034 164.474C23.7857 166.112 18.7772 159.88 21.6494 154.453L38.3858 122.831C40.1577 119.483 38.945 115.333 35.6491 113.466L4.51873 95.8306C-0.823755 92.8042 0.0411506 84.8563 5.90955 83.0498L40.1045 72.5237C43.7248 71.4093 45.8018 67.6172 44.7915 63.9665L35.2487 29.4842C33.611 23.5665 39.8426 18.558 45.2695 21.4303L76.8921 38.1666C80.24 39.9386 84.3901 38.7258 86.2572 35.43L103.892 4.29956C106.918 -1.04292 114.866 -0.178018 116.673 5.69039L127.199 39.8853C128.313 43.5056 132.105 45.5826 135.756 44.5723L170.238 35.0295Z" fill="#FF873D"/>
         </svg>
       </div>
     </div>
-    <div class="semi">
-      <div class="semi-group">
+    <div class="semi" data-fade="up" data-delay="0.2" >
+      <div class="semi-group" data-anim="float">
         <svg width="399" height="408" viewBox="0 0 399 408" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M231.839 338.652L231.656 338.799C234.234 343.759 233.047 350.01 228.521 353.645L217.318 362.642C212.163 366.783 204.625 365.961 200.484 360.805C196.344 355.649 197.168 348.112 202.324 343.971L204.191 342.471L189.173 323.773L207.845 308.777L231.839 338.652ZM173.947 317.309L173.814 352.996C173.815 353.073 173.816 353.15 173.816 353.227C173.816 353.305 173.813 353.382 173.811 353.459L173.803 355.624L173.566 355.624C172.436 361.084 167.589 365.179 161.797 365.157L147.429 365.102C140.816 365.077 135.475 359.696 135.5 353.083C135.525 346.471 140.906 341.13 147.519 341.155L149.911 341.163L150.001 317.219L173.947 317.309Z" fill="url(#paint0_linear_4712_134742)"/>
         <path d="M55.7781 241.888L175.978 85.0461C197.001 57.6139 239.819 63.1384 253.191 95.0085L329.644 277.223C343.062 309.203 316.785 343.702 282.39 339.264L184.063 326.577L85.7371 313.891C51.3414 309.453 34.6823 269.414 55.7781 241.888Z" fill="url(#paint1_linear_4712_134742)"/>
@@ -68,8 +75,8 @@
         </svg>
       </div>
     </div>
-    <div class="nemi">
-      <div class="nemi-group">
+    <div class="nemi" data-fade="up" data-delay="0.4">
+      <div class="nemi-group" data-anim="float">
         <svg width="353" height="355" viewBox="0 0 353 355" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M154.433 311.009L155.148 311.021C155.453 317.07 160.398 321.93 166.544 322.035L176.325 322.202C182.736 322.311 188.023 317.202 188.132 310.79C188.242 304.378 183.132 299.091 176.721 298.982L175.86 298.967L176.341 270.735L155.126 270.373L154.433 311.009ZM202.433 270.547L225.597 303.941L226.3 303.453C230.214 306.853 236.074 307.312 240.529 304.222L248.567 298.646C253.836 294.991 255.143 287.756 251.488 282.487C247.833 277.217 240.599 275.909 235.33 279.564L234.777 279.946L219.867 258.453L202.433 270.547Z" fill="#6EC487"/>
         <path d="M191.755 280.666L100.304 294.598C69.2643 299.327 42.0786 273.553 45.1469 242.305L61.6137 74.6008C63.765 52.6905 80.5066 35.0318 102.271 31.716L203.046 16.3631C224.811 13.0473 246.051 24.9195 254.629 45.1952L320.289 200.388C332.523 229.305 314.246 262.005 283.206 266.734L191.755 280.666Z" fill="url(#paint0_linear_4712_134756)"/>
@@ -118,16 +125,16 @@
         </svg>  
       </div>
     </div>
-    <div class="title-box">
+    <div class="title-box"  data-fade="up" data-delay="0.4">
       <div class="category">
-        <div class="clover">
+        <div class="clover" >
           <div class="clover-group">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.70703 0.78125C11.8018 0.781252 13.5 2.47942 13.5 4.57422C13.5 5.59602 13.0945 6.52209 12.4375 7.2041C13.0982 7.90226 13.5048 8.84378 13.5049 9.88086C13.5049 12.033 11.7595 13.7783 9.60742 13.7783C8.57481 13.7782 7.6367 13.3754 6.93945 12.7197C6.25581 13.3784 5.32702 13.7841 4.30273 13.7842C2.20283 13.7842 0.500172 12.0823 0.5 9.98242C0.5 8.92347 0.932404 7.96483 1.63086 7.27539C0.932958 6.58752 0.5 5.63155 0.5 4.57422C0.500002 2.47942 2.19817 0.78125 4.29297 0.78125C5.35353 0.781251 6.31167 1.21728 7 1.91895C7.68833 1.21728 8.64647 0.78125 9.70703 0.78125Z" fill="#3C98FF"/>
             </svg>
           </div>
         </div>
-        <div class="category-text">
+        <div class="category-text" >
           <div class="scrap-layout">scrap Layout</div>
         </div>
         <div class="clover2">
@@ -153,7 +160,7 @@
     </div>
     <div class="main-box">
       <div class="phone-box">
-        <div class="btn-box">
+        <div class="btn-box"  data-fade="up" data-delay="0.6">
           <div class="btn">
             <div class="scrap-circle">
               <div class="scrap-circle-group">
@@ -167,8 +174,8 @@
               <div class="btn-text">스크랩 내역</div>
             </div>
         </div>
-        <img class="scrap-phone-overflow" src="./scrap-section.images/phone-overflow-img.png" />
-        <img class="scrap-phone-mockup" src="./scrap-section.images/phone-mockup.png" />
+        <img class="scrap-phone-overflow"  data-fade="up" data-delay="0.1" src="./scrap-section.images/phone-overflow-img.png" />
+        <img class="scrap-phone-mockup"  data-fade="up" data-delay="0.8" src="./scrap-section.images/phone-mockup.png" />
       </div>
     </div>
   </div>

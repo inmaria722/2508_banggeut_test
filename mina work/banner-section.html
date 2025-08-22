@@ -3,20 +3,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./banner.js" defer></script>
   </head>
 
   <body>
     <div class="sec-banner">
       <div class="con">
-        <img class="star-left" src="./banner-imags/Star-left.png" />
-        <img class="star-right" src="./banner-imags/Star-right.png" />
+        <img class="star-left" data-anim="scale-scroll" data-mode="grow" data-from="0.75" data-to="1.15" data-end="+=500" data-scrub="0.6" src="./banner-imags/Star-left.png" />
+        <img class="star-right" data-anim="scale-scroll" data-mode="grow" data-from="0.75" data-to="1.15" data-end="+=500" data-scrub="0.6" src="./banner-imags/Star-right.png" />
         <img class="dami" src="./banner-imags/dami.png" />
         <img class="nemi" src="./banner-imags/nemi.png" />
-        <div class="banner-text-box">
+        <div class="banner-text-box" data-anim="fade-ltr" data-delay="1" >
           <div class="banner-text-left-box">
             <p class="banner-text-left">Banggeut<br>life Help Service For Living Alone</p>
           </div>
-          <div class="banner-text-right-box">
+          <div class="banner-text-right-box" >
             <div class="banner-right"><div class="right-1">2025.08.08</div></div>
             <div class="banner-right"><div class="right-2">App Design</div></div>
           </div>
@@ -132,7 +141,7 @@
           </svg>
           </div></div>
         </div>
-        <img class="banner-title" src="./banner-imags/banner-title.png" />
+        <img class="banner-title" data-fade="up"  data-delay="1.5" src="./banner-imags/banner-title.png" />
         <img class="phone" src="./banner-imags/phone.png"/>
       </div>
     </div>

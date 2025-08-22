@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blue-section</title>
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <!-- tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./blue.js" defer></script>
 </head>
 
 <body>
   <!---------- blue-section-1 ---------->
   <section class="blue-box-1">
       <div class="bg-blue"></div>
-      <div class="star-top"><svg width="325" height="218" viewBox="0 0 325 218" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="star-top" data-fade="up" data-delay="0.2"><svg width="325" height="218" viewBox="0 0 325 218" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.07" d="M270.182 -60.9469C275.896 -63.2319 281.566 -57.562 279.281 -51.8482L253.535 12.5319C252.125 16.059 253.785 20.0675 257.276 21.5645L320.749 48.7815C326.392 51.2013 326.407 59.1962 320.774 61.6377L257.011 89.2708C253.545 90.7727 251.896 94.7533 253.284 98.2662L278.723 162.64C280.974 168.337 275.338 173.974 269.64 171.722L205.266 146.284C201.754 144.896 197.773 146.545 196.271 150.011L168.638 213.773C166.196 219.407 158.202 219.392 155.782 213.748L128.565 150.276C127.068 146.785 123.059 145.124 119.532 146.535L55.1521 172.281C49.4383 174.566 43.7684 168.896 46.0534 163.182L71.799 98.8018C73.2095 95.2746 71.5494 91.2662 68.0581 89.7691L4.58557 62.5522C-1.05767 60.1324 -1.07309 52.1375 4.56079 49.6959L68.3235 22.0629C71.7892 20.561 73.4383 16.5803 72.0501 13.0675L46.6117 -51.3059C44.3601 -57.0037 49.9967 -62.6402 55.6944 -60.3887L120.068 -34.9502C123.581 -33.562 127.561 -35.2112 129.063 -38.6769L156.696 -102.44C159.138 -108.073 167.133 -108.058 169.553 -102.415L196.769 -38.9422C198.267 -35.4509 202.275 -33.7908 205.802 -35.2013L270.182 -60.9469Z" fill="#EBF4FF"/>
           </svg></div>
-                  <div class="star-bottom"><svg width="464" height="322" viewBox="0 0 464 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="star-bottom" data-fade="up" data-delay="0.4"><svg width="464" height="322" viewBox="0 0 464 322" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.07" filter="url(#filter0_f_4712_131711)">
           <path d="M358.983 52.3531C364.315 49.28 370.732 54.0873 369.282 60.0677L345.188 159.403C344.293 163.094 346.505 166.827 350.174 167.813L448.493 194.243C454.422 195.837 455.573 203.749 450.343 206.966L363.141 260.599C359.924 262.577 358.857 266.752 360.73 270.032L411.29 358.583C414.328 363.903 409.549 370.283 403.589 368.863L304.396 345.233C300.722 344.358 297.015 346.555 296.021 350.199L269.063 448.961C267.446 454.884 259.53 456.004 256.333 450.762L203.331 363.837C201.353 360.593 197.15 359.519 193.859 361.416L105.302 412.461C99.9701 415.534 93.5526 410.727 95.0032 404.746L119.097 305.411C119.992 301.719 117.779 297.987 114.111 297.001L15.7921 270.571C9.86241 268.977 8.71199 261.065 13.9421 257.848L101.144 204.215C104.361 202.237 105.428 198.062 103.555 194.782L52.9946 106.231C49.9569 100.911 54.736 94.5307 60.6957 95.9505L159.889 119.581C163.563 120.456 167.269 118.259 168.264 114.615L195.222 15.8532C196.839 9.92976 204.755 8.80984 207.952 14.0523L260.954 100.977C262.931 104.221 267.135 105.295 270.426 103.398L358.983 52.3531Z" fill="#EBF4FF"/>
           </g>
@@ -29,20 +36,24 @@
           </svg>
           </div>
       <div class="con">
-          <div class="title-box">
+          <div class="title-box" data-fade="up" data-delay="0.4">
               <div class="title"><div class="text-wrapper">자취, 무엇이 가장불편할까요?</div></div>
           </div>
       </div>
   </section>
 
+
+
+
+
 <!---------- blue-section-2 ---------->
-<div class="blue-box-2">
+<div class="blue-box-2" >
   <div class="con">
     <div class="title-box">
-      <div class="category">
+      <div class="category" data-fade="up" data-delay="0.7">
         <span class="pain-point">Pain Point</span>
       </div>
-      <div class="title">
+      <div class="title" data-fade="up" data-delay="0.7">
         <div class="div-wrapper">
           <p class="text-wrapper">"다른 자취생들과 대화를<br>나눌 수 있는 공간이 너무 부족해요"</p>
         </div>
@@ -52,7 +63,7 @@
     <div class="pain-list-box-wrap">
       <div class="pain-list-box">     
         <!----- 첫 번째 pain ----->
-        <div class="pain-list pain-list-1">
+        <div class="pain-list pain-list-1" data-fade="up" data-delay="0.7">
           <div class="pain-num">
               <div class="num">1</div>
             </div>
@@ -111,7 +122,7 @@
           </div>
         </div>
         <!----- 두 번째 pain ----->
-        <div class="pain-list pain-list-2">
+        <div class="pain-list pain-list-2" data-fade="up" data-delay="0.8">
           <div class="pain-num">
               <div class="num">2</div>
             </div>
@@ -174,17 +185,18 @@
 
 
 
+
 <!---------- blue-section-3 ---------->
 <section class="blue-box-3">
     <div class="con">
       <div class="tittle-box">
-        <div class="category"><span class="category-text">pain point</span></div>
-        <div class="tittle"><span class="tittle-text">1인 가구에 맞는<br> 합리적인 소비를 하기 힘들어요</span></div>
+        <div class="category" data-fade="up" data-delay="0.7"><span class="category-text">pain point</span></div>
+        <div class="tittle" data-fade="up" data-delay="0.7"><span class="tittle-text">1인 가구에 맞는<br> 합리적인 소비를 하기 힘들어요</span></div>
       </div>
       <div class="pain-list-box-wrap">
         <div class="pain-list-box">
           <!----- 세 번째 pain ----->
-          <div class="pain-list pain-list-1">
+          <div class="pain-list pain-list-1" data-fade="up" data-delay="0.8">
             <div class="pain-num">
               <div class="num">3</div>
             </div>
@@ -252,7 +264,7 @@
             </div>
           </div>
           <!----- 네 번째 pain ----->
-          <div class="pain-list pain-list-2">
+          <div class="pain-list pain-list-2" data-fade="up" data-delay="0.9">
             <div class="pain-num">
               <div class="num">4</div>
             </div>
@@ -323,11 +335,13 @@
 
 
 
+
+
 <!---------- blue-section-4 ----------->
 <div class="sec-blue-box-4-competitive-box">
   <div class="con">
-    <div class="title-box">
-      <div class="category">
+    <div class="title-box" data-fade="up" data-delay="0.6">
+      <div class="category" data-fade="up" data-delay="0.6">
         <div class="competitive-analysis">
           <span>competitive Analysis</span>
         </div>
@@ -343,10 +357,10 @@
         </span>
       </div>
     </div>
-    <div class="main-box">
-      <div class="company-box">
+    <div class="main-box" >
+      <div class="company-box" data-anim-stagger data-dist="70" data-dur="0.9" data-each="0.14" data-onc="true"  data-order="x"> 
         <div class="div1"></div>
-        <div class="todayhome">
+        <div class="todayhome" data-anim-item>
           <div class="today-home-ico">
             <div class="ico1">
               <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,7 +370,7 @@
             </div>
           </div>
         </div>
-        <div class="naver">
+        <div class="naver" data-anim-item>
           <div class="naver-ico">
             <div class="ico2">
               <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,7 +380,7 @@
             </div>
           </div>
         </div>
-        <div class="coupang">
+        <div class="coupang" data-anim-item>
           <div class="coupang-ico">
             <div class="ico3">
               <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -386,7 +400,7 @@
             </div>
           </div>
         </div>
-        <div class="youtube">
+        <div class="youtube" data-anim-item>
           <div class="youtube-ico">
             <div class="ico4">
               <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -404,32 +418,32 @@
           </div>
         </div>
       </div>
-      <div class="service-box">
+      <div class="service-box" data-anim-stagger data-dist="70" data-dur="0.9" data-each="0.14" data-onc="true"  data-order="x">
         <div class="title2">
           <div class="span">
             <div class="servece">주요 서비스</div>
           </div>
         </div>
-        <div class="desc">
-            <div class="div5">
+        <div class="desc" data-anim-item>
+            <div class="div5" >
               공간 중심 콘텐츠 + 커머스<br/>라이프 스타일 플랫폼
           </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               생활 전반 정보 허브이자
               <br />
               리뷰·쇼핑까지 연결되는 멀티 플랫폼
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               즉시성, 가격 중심의
               <br />
               초개인화 커머스 플랫폼
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               비주얼 중심의
               <br />
@@ -437,32 +451,32 @@
             </div>
         </div>
       </div>
-      <div class="improvement-box">
+      <div class="improvement-box" data-anim-stagger data-dist="70" data-dur="0.9" data-each="0.14" data-onc="true"  data-order="x">
         <div class="title2">
             <div class="_1">개선사항 1</div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               콘텐츠가 방대해 핵심 정보만
               <br />
               빠르게 찾기 어려움
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               정보 편차가 크고 블로그
               <br />
               다수가 광고성으로 신뢰도 낮음
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               카테고리보다 검색 위주라
               <br />
               아이템 탐색이 어려움
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               원하는 정보 찾기까지
               <br />
@@ -470,32 +484,32 @@
             </div>
         </div>
       </div>
-      <div class="improvement-box">
+      <div class="improvement-box" data-anim-stagger data-dist="70" data-dur="0.9" data-each="0.14" data-onc="true"  data-order="x">
         <div class="title2">
             <div class="_2">개선사항 2</div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               정리/청소/생활관리 등 실행형
               <br />
               정보 콘텐츠는 상대적으로 약함
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="_12">
               1인 가구에게 필요한 핵심
               <br />
               정보만 골라보기 어려움
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               노하우나 활용 팁 중심
               <br />
               정보가 부족함
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" data-anim-item>
             <div class="div5">
               상업성 정보와 실사용 후기
               <br />
@@ -503,32 +517,32 @@
             </div>
         </div>
       </div>
-      <div class="improvement-box2">
+      <div class="improvement-box2" data-anim-stagger data-dist="70" data-dur="0.9" data-each="0.14" data-onc="true"  data-order="x">
         <div class="frame-1457">
           <div class="_3">개선사항 3</div>
         </div>
-        <div class="frame-1458">
+        <div class="frame-1458" data-anim-item>
           <div class="div5">
             협친/광고 콘텐츠가 많아 정보의
             <br />
             신뢰도가 의심될 때가 있음
           </div>
         </div>
-        <div class="frame-1459">
+        <div class="frame-1459" data-anim-item>
           <div class="div5">
             개인 맞춤형 콘텐츠
             <br />
             큐레이션 부족함
           </div>
         </div>
-        <div class="frame-1460">
+        <div class="frame-1460" data-anim-item>
           <div class="div5">
             제품은 많지만 어떻게 쓰면 좋은지에
             <br />
             대한 맥락 정보가 부족해 선택이 어려움.
           </div>
         </div>
-        <div class="frame-1461">
+        <div class="frame-1461" data-anim-item>
           <div class="div5">
             영상마자 팁 퀄리티가 상이하고,
             <br />
@@ -548,7 +562,7 @@
 <div class="sec-blue-box-5">
   <div class="con">
     <div class="crying-semi">
-      <div class="crying">
+      <div class="crying" data-fade="up">
         <svg width="1038" height="718" viewBox="0 0 1038 718" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.65">
         <path d="M131.551 687.809L599.35 -118.742C657.55 -219.086 802.45 -219.086 860.65 -118.742L1328.45 687.809C1386.85 788.499 1314.2 914.621 1197.8 914.621H730H262.2C145.8 914.621 73.1507 788.499 131.551 687.809Z" fill="url(#paint0_linear_4712_131981)"/>
@@ -593,12 +607,11 @@
         </linearGradient>
         </defs>
         </svg>
-
       </div>
       <div class="title-box">
         <div class="title">
           <div class="span">
-            <div class="div2">
+            <div class="div2" data-fade="up">
               기존 앱 내 서비스의 한계로 인해
               <br />
               많은 사용자들이 같은 불편을 겪고 있어요
@@ -655,8 +668,9 @@ h1, h2, h3, h4, h5, span {
     height: 1684px;
     top: 0;
     left: 50%;
-    border-radius: 1273.5px / 842px;
+    border-radius: 0;
     transform: translateX(-50%);
+    transition: border-radius 0.5s ease;
     background: linear-gradient(180deg, rgba(60, 152, 255, 1) 0%, rgba(235, 244, 255, 1) 100%);
   }
 
@@ -896,6 +910,7 @@ h1, h2, h3, h4, h5, span {
     }
   }
 
+
   .pain-text {
     display: flex;
     flex-direction: column;
@@ -1080,7 +1095,10 @@ h1, h2, h3, h4, h5, span {
               color: #3C98ff;
               font-weight: bold;
               font-size: 14px;
+              letter-spacing: var(---letter-spacing);
+              line-height: var(---line-height);
               white-space: nowrap;
+              font-style: var(---font-style);
             }
 
             .title {
@@ -1764,5 +1782,9 @@ h1, h2, h3, h4, h5, span {
   position: relative;
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+
 </body>
 </html>

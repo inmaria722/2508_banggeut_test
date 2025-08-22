@@ -4,8 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-   <!-- tailwind -->
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <!-- tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./search.js" defer></script>
 </head>
 <body>
 
@@ -19,10 +26,10 @@
       </svg>
     </div>
   </div>
-  <div class="search-keyword">
+  <div class="search-keyword" data-fade="up"  data-delay="1.2">
     <div class="search">SEARCH</div>
   </div>
-  <div class="search-ico">
+  <div class="search-ico" data-fade="up"  data-delay="1.4">
     <div class="group">
       <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M21.4889 7.22718C30.9462 6.03394 39.5802 12.7336 40.7736 22.1916C41.9669 31.6496 35.2676 40.2839 25.8103 41.4771C16.353 42.6703 7.7189 35.9707 6.52558 26.5127C5.33226 17.0547 12.0317 8.42048 21.4889 7.22718Z" stroke="#FF873D" stroke-width="6.12095" stroke-miterlimit="10"/>
@@ -30,7 +37,14 @@
       </svg>
     </div>
   </div>
-  <div class="pointer">
+  <div class="pointer" data-anim="poke"
+     data-dir="rtl"        
+     data-dist="30"        
+     data-speed="0.4"     
+     data-back="0.18"     
+     data-over="0.22"      
+     data-times="7"        
+     data-gap="0.8">     
     <div class="arrow-selector-tool">
       <svg width="187" height="191" viewBox="0 0 187 191" fill="none" xmlns="http://www.w3.org/2000/svg">
       <mask id="mask0_4943_132316" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="187" height="191">
@@ -43,7 +57,7 @@
     </div>
   </div>
   <div class="con">
-    <div class="title-box">
+    <div class="title-box" data-fade="up"  data-delay="0.4">
       <div class="category">
         <div class="clover">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,8 +90,8 @@
     </div>
     <div class="main-box">
       <div class="left">
-        <div class="folder-box">
-          <div class="index">
+        <div class="folder-box" data-fade="up"  data-delay="0.4">
+          <div class="index" >
             <div class="index-1">
               <svg width="200" height="106" viewBox="0 0 200 106" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0H117.204C129.977 0 141.794 6.76822 148.256 17.7858L200 106H0V0Z" fill="#C4E0FF"/>
@@ -91,16 +105,16 @@
               </svg>
             </div>
           </div>
-          <div class="folder">
+          <div class="folder" >
             <div class="folder-con">
               <div class="folder-title">
-                  <div class="folder-desc">
+                  <div class="folder-desc" data-fade="up"  data-delay="0.8">
                     검색 키워드를
                     <br />
                     필터링해서 탐색
                   </div>
               </div>
-              <div class="hot-search-box-1">
+              <div class="hot-search-box-1"  data-fade="up"  data-delay="1">
                 <div class="hot-search">
                   <svg width="448" height="141" viewBox="0 0 448 141" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect y="0.5" width="448" height="140" fill="url(#pattern0_4943_132491)"/>
@@ -113,7 +127,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="recommend-search-box-1">
+              <div class="recommend-search-box-1" data-fade="up"  data-delay="1.2">
                 <div class="recommend-search">
                   <svg width="448" height="157" viewBox="0 0 448 157" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect y="0.5" width="448" height="156" fill="url(#pattern0_4943_132489)"/>
@@ -130,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right" data-fade="up"  data-delay="2">
         <img class="phone-mockup" src="./search-section.images/phone-mockup.png" />
       </div>
     </div>
@@ -237,9 +251,9 @@
   height: 248.99px;
   position: absolute;
   left: 1484.62px;
-  top: calc(50% - -354.36px);
+  top: calc(50% - -320px);
   transform-origin: 0 0;
-  transform: rotate(-17.88deg) scale(0.994, 1.006);
+  transform: rotate(-15deg) scale(0.994, 1.006);
 
   .arrow-selector-tool {
     flex-shrink: 0;
